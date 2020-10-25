@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+    <body>
+    <header id="header">
+        <%- include('../partials/header'); %>
+    </header>
+    <main id="main">
+        <div class="welcome-message">
+            <h2 class="title">Hi, I am <%= name %>,</h2>
+            <p>
+                Welcome to my online portfolio. I have portrayed some of my work here to help you get an idea of my skills in case you would want to avail one of my services!
+                <br/><br/>
+                Feel free to contact me for any work related queries!
+            </p>
+            <a href="/contact" class="button">Contact</a>
+        </div>
+        <figure class="quote">
+            <blockquote>
+                I have loved programming since I was 16 and my love for it has grown ever since. Striving to learn and keep up to date with new technologies is what I love!
+            </blockquote>
+            <figcaption>
+            <cite>My Mission Statement</cite></figcaption>
+        </figure>
+    </main>
+    <footer id="footer">
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+</html>

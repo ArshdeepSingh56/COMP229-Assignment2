@@ -1,0 +1,142 @@
+/*
+	Name: Arshdeep Singh
+	Student ID: 301118326
+	Date: 2020-09-7
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+html, body{padding:0;margin:0;overflow-x:hidden;}
+body{font-family:'Noto Sans',sans-serif;background:url('/public/images/bg.png');background-size:cover;background-attachment: fixed;color:black;}
+*{box-sizing:border-box;}
+
+a{color:unset;text-decoration: none;}
+p{font-size:16px;line-height:160%;}
+
+.logo{max-width:60px;}
+.logo img{max-width:100%;height:auto;}
+
+.shadow-center{box-shadow:
+    0 1.1px 2.2px rgba(0, 0, 0, 0.011),
+    0 2.7px 5.3px rgba(0, 0, 0, 0.016),
+    0 5px 10px rgba(0, 0, 0, 0.02),
+    0 8.9px 17.9px rgba(0, 0, 0, 0.024),
+    0 16.7px 33.4px rgba(0, 0, 0, 0.029),
+    0 40px 80px rgba(0, 0, 0, 0.04)
+  ;  
+}
+
+.shadow-center-strong{
+    box-shadow:
+    0 0px 39.5px rgba(0, 0, 0, 0.009),
+    0 0px 68.2px rgba(0, 0, 0, 0.013),
+    0 0px 89.6px rgba(0, 0, 0, 0.017),
+    0 0px 113.8px rgba(0, 0, 0, 0.021),
+    0 0px 208px rgba(0, 0, 0, 0.03)
+  ;
+}
+
+.button{display:inline-block;transition:background-color 0.4s;padding:15px 20px;font-size:14px;background:rgba(0,0,0,0.1);color:black;border-radius:5px;margin:20px 0;max-width:150px;text-align:center;border:none;outline:none;}
+.button:hover{background:rgba(0,0,0,0.2);}
+
+section .caption{font-size:38px;margin-top:20px;}
+
+.contact-table{border-collapse: collapse;overflow:hidden;border-radius:10px;}
+.contact-table td{padding:15px;min-width:120px;background:rgba(255,255,255,0.2);}
+
+.image-card-1{position:relative;max-width:370px;min-width:300px;background:#fff;color:#000;border:4px solid #090;}
+.image-card-1 .image{position:relative;width:100%;}
+.image-card-1 img{width:100%;height:auto;max-height:300px;margin-left:-0.2px;}
+.image-card-1 .content{}
+.image-card-1 .content p{margin:10px 0;padding:20px 20px;}
+.image-card-1 .title{position:relative;color:black;font-size:24px;padding:20px;padding-bottom:0;margin:0;}
+.image-card-1 .nav{border-top:1px solid #ddd;padding:15px 20px;}
+.image-card-1 .nav a{color:rgb(144, 148, 144);display:inline-block;vertical-align:bottom;text-transform:uppercase;text-decoration:none;transition:color 0.3s;}
+.image-card-1 .nav a:not(:first-of-type){margin:0 10px;}
+.image-card-1 .nav a:hover{color:#000;}
+
+
+#header{width:100%;background:white;}
+#header .inner{padding:10px 20px;display:flex;align-items: center}
+#header .nav-container{display:inline-block;margin:0 0 0 auto;text-align:center;}
+#header .nav-container .fas{font-size:22px;margin-right:10px;position:relative;top:4px;}
+#header nav a{margin:0 15px;}
+#header nav a:hover{color:#090;}
+
+#footer{width:100%;padding:20px;color:#000;background:#fff;}
+#footer .copyright{text-align:center;margin:10px auto;}
+
+@media (max-width: 700px) 
+{
+  #header .inner{display:block;text-align:center;}
+  #header .logo{margin:0 auto;margin-bottom:15px;}
+  #header nav a{display:block;width:100%;padding:15px;margin:0;}
+}
+
+@media (max-width: 1200px) 
+{
+  .section-projects .cards-container{display:block !important;text-align:center;}
+  .section-projects .image-card-1{display:block;margin:50px auto !important;}
+}
+
+main{padding:20px;}
+
+.welcome-message{background:#fff;max-width:700px;margin:50px auto;min-width:330px;color:black;padding:5px 20px;border-radius:10px;}
+.welcome-message .title{font-size:34px;color:#090;}
+.quote{margin:50px auto;max-width:700px;background: #fbfbfb;padding: 1em;border-radius: 1em;border:1px solid green;}
+.quote figcaption,
+.quote blockquote{margin: 1em;}
+
+.aboutme{border-radius:10px;color:#000;max-width:1000px;padding:20px;background:#fff;margin:50px auto;}
+.aboutme .picture{max-width:250px;height:auto;border-radius:10px;}
+.aboutme .description{margin:40px 0;max-width:700px;}
+.aboutme .title{color:#090;font-size:42px;}
+
+.projects{padding:100px 20px;}
+.projects .section-title{color:#fff;text-align:center;margin:0 0 50px 0;font-size:32px;}
+.projects .cards-container{display:flex;justify-content: center;}
+.projects .image-card-1{margin:0 25px;}
+
+.services{max-width:1300px;margin:100px auto;text-align:center;}
+.services .col-left{display:inline-block;vertical-align:top;max-width:45%;margin:0 30px;}
+.services .col-right{display:inline-block;vertical-align:top;max-width:45%;margin:0 30px;}
+.services .section-title{font-size:48px;margin-bottom:40px;color:#fff;}
+.services .service{max-width:800px;margin:70px auto;color:black;text-align:left;}
+.services .service .trigger{background:#090;width:100%;padding:20px;margin:0;color:#fff;}
+.services .service .service-content{background:white;width:100%;padding:20px;min-height:130px;}
+.services .service .service-content:not(:first-of-type){display:none;}
+
+.contact{max-width:1000px;padding:20px;margin:50px auto;border-radius:10px;background:#fff;color:#000;}
+.contactform{max-width:1000px;padding:20px;margin:50px auto;border-radius:10px;background:#fff;color:#000;}
+.contactform .textbox{border:2px solid #090;display:block;border-radius:5px;max-width:360px;min-width:300px;margin:10px 0;padding:15px;outline:none;transition:all 0.3s;font-size:16px;font-weight:bold;color:#444;font-family:'Noto Sans',sans-serif;}
+.contactform .textbox:focus{background:#090;color:white;}
+.contactform .caption{color:#090;}
+
+.login{max-width:380px;padding:20px;margin:70px auto;border-radius:10px;background:#fff;color:#000;text-align:center;}
+.login .caption{color:#090;margin:10px 0;font-size:42px;margin-bottom:40px;}
+
+.admin{max-width:1100px;padding:20px;margin:20px auto;border-radius:10px;color:#fff;text-align:center;}
+.admin .title{color:#090;margin:10px 0;font-size:42px;margin-bottom:40px;}
+
+.contact-list{border-collapse: collapse;min-width:600px;border-radius:0px;overflow:hidden;color:black;margin:0 auto;}
+.contact-list th{background:#090;color:white;padding:20px;}
+.contact-list td{padding:15px;}
+.contact-list tr:nth-child(even){background:#eee;}
+.contact-list tr:nth-child(odd){background:#ddd;}
+.contact-list a{display:block;background:#222;color:white;padding:10px;border-radius:5px;font-size:14px;}
+.contact-list a:hover{background:#555;}
+
+.update{max-width:580px;padding:20px;margin:20px auto;border-radius:10px;background:#fff;color:#000;text-align:center;}
+.update .form-s1{margin:0 auto;text-align:center;}
+.update .form-s1 .textbox{width:100%;}
+.update .title{color:#090;margin:10px 0;font-size:42px;margin-bottom:40px;}
+
+.form-s1{padding:20px;border-radius:10px;max-width:500px;}
+.form-s1 .fieldgroup{padding:10px 0;}
+.form-s1 .textbox{padding:15px;font-size:16px;border:none;background:rgba(0,0,0,0.050);min-width:240px;border-radius:5px;border:2px solid #999;}
+.form-s1 .textbox:focus{outline:none;border:2px solid black;}
+.form-s1 .button{background:black;border-radius:5px;min-width:120px;text-align:center;color:white;}
+.form-s1 .button:hover{background-color:#333;}
+
+.account-controls{padding:20px;border-radius:10px;margin:0 auto;max-width:400px;text-align:center;}
+.account-controls a{min-width:100px;text-align:center;background:white;color:black;border-radius:5px;padding:15px;font-size:14px;margin:15px;display:inline-block;vertical-align:top;}

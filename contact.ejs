@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+    <body>
+    <header id="header">
+        <%- include('../partials/header'); %>
+    </header>
+    <main id="main">
+        <section class="contactform">
+            <h1 class="caption">Contact Form</h1>
+            <p>
+                Feel free to get in touch via this form. You ask any questions or give feedback about the website!<br/><br/>
+
+                I would usually reply within 2 business days.
+            </p>
+            <form method="GET" id="contact-form">
+                <input id="name" class="textbox" placeholder="Your Name"/>
+                <input id="email" class="textbox" placeholder="Your Email"/>
+                <input id="message" class="textbox" placeholder="Your Message"/>
+                <input class="button" type="submit" value="Send Message"/>
+            </form>
+        </section>
+       <section class="contact">
+            <h1 class="caption">Contact</h1>
+            <table class="contact-table">
+                <tr>
+                    <td>Name</td>
+                    <td><%= name %></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>arshdeepsingh5656@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>Brampton, ON</td>
+                </tr>
+            </table>
+       </section>
+    </main>
+    <footer id="footer">
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+</html>

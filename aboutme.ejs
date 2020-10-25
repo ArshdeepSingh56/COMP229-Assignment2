@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+    <body>
+    <header id="header">
+        <%- include('../partials/header'); %>
+    </header>
+    <main id="main">
+        <section class="aboutme">
+            <h1 class="title">About Me</h1>
+            <img class="picture" src="public/images/self.jpg"/>
+            <p class="description" style="margin-top:20px;">
+               I am <%= name %>, a student residing in Brampton. I hope this site has helped you know me better. If you require any assistance on any of the services listed in the website, feel free to contact.<br/><br/>
+               If you would like to collaborate on projects, I am open for it!
+            </p>
+            <h2>What I like doing,</h2>
+            <ul>
+                <li>Programming</li>
+                <li>Playing football</li>
+                <li>Hanging out</li>
+                <li>Travelling</li>
+            </ul>
+            <a href="public/docs/resume.pdf" class="button">View Resume</a>
+        </section>
+    </main>
+    <footer id="footer">
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+</html>
