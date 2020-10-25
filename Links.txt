@@ -1,0 +1,6 @@
+Heroku Deployment: https://sleepy-sands-00564.herokuapp.com/
+Github Repo Link: https://github.com/ArshdeepSingh56/COMP229-Assignment2
+
+Admin area can be accessed using:
+username: admin
+password: 123
